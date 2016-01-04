@@ -1,0 +1,198 @@
+extends layout
+
+block content
+
+  form(id='character')
+    div(class='col left')
+
+      div(class='leftupper group')
+
+        div(class='leftleft')
+          h2 Stats
+
+          input(id='strength' type='number' name='strength')
+          label(for='strength') Strength
+          input(id='strengthMod' type='number' name='strengthMod')
+          label(for='strengthMod') Mod
+          br
+          br
+          input(id='dexterity' type='number' name='dexterity')
+          label(for='dexterity') Dexterity
+          input(id='dexterityMod' type='number' name='dexterityMod')
+          label(for='dexterityMod') Mod
+          br
+          br
+          input(id='constitution' type='number' name='constitution')
+          label(for='constitution') Constitution
+          input(id='constitutionMod' type='number' name='constitutionMod')
+          label(for='constitutionMod') Mod
+          br
+          br
+          input(id='intelligence' type='number' name='intelligence')
+          label(for='intelligence') Intelligence
+          input(id='intelligenceMod' type='number' name='intelligenceMod')
+          label(for='intelligenceMod') Mod
+          br
+          br
+          input(id='wisdom' type='number' name='wisdom')
+          label(for='wisdom') Wisdom
+          input(id='wisdomMod' type='number' name='wisdomMod')
+          label(for='wisdomMod') Mod
+          br
+          br
+          input(id='charisma' type='number' name='charisma')
+          label(for='charisma') Charisma
+          input(id='charismaMod' type='number' name='charismaMod')
+          label(for='charismaMod') Mod
+
+        div(class='leftright')
+
+          input(id='inspiration' type='checkbox' name='inspiration')
+          label(for='inspiration') Inspiration
+          br
+          br
+          input(id='proficiency' type='number' name='proficiency')
+          label(for='proficiency') Proficiency
+
+          div(class='savingThrows')
+
+            h2 Saves
+
+            input(id='strengthSaveProficiency' type='checkbox' name='strengthSaveProficiency')
+            input(id='strengthSave' type='number' name='strengthSave')
+            label(for='strengthSave') Strength
+            br
+            br
+            input(id='dexteritySaveProficiency' type='checkbox' name='dexteritySaveProficiency')
+            input(id='dexteritySave' type='number' name='dexteritySave')
+            label(for='dexteritySave') Dexterity
+            br
+            br
+            input(id='constitutionSaveProficiency' type='checkbox' name='constitutionSaveProficiency')
+            input(id='constitutionSave' type='number' name='constitutionSave')
+            label(for='constitutionSave') Constitution
+            br
+            br
+            input(id='intelligenceSaveProficiency' type='checkbox' name='intelligenceSaveProficiency')
+            input(id='intelligenceSave' type='number' name='intelligenceSave')
+            label(for='intelligenceSave') Intelligence
+            br
+            br
+            input(id='wisdomSaveProficiency' type='checkbox' name='wisdomSaveProficiency')
+            input(id='wisdomSave' type='number' name='wisdomSave')
+            label(for='wisdomSave') Wisdom
+            br
+            br
+            input(id='charismaSaveProficiency' type='checkbox' name='charismaSaveProficiency')
+            input(id='charismaSave' type='number' name='charismaSave')
+            label(for='charismaSave') Charisma
+
+          div(class='skills')
+
+            h2 Skills
+
+            input(id='acrobaticsProficiency' type='checkbox' name='acrobaticsProficiency')
+            input(id='acrobatics' type='number' name='acrobatics')
+            label(for='acrobatics') Acrobatics
+            br
+            br
+            input(id='animalHandlingProficiency' type='checkbox' name='animalHandlingProficiency')
+            input(id='animalHandling' type='number' name='animalHandling')
+            label(for='animalHandling') Animal Handling
+            br
+            br
+            input(id='arcanaProficiency' type='checkbox' name='arcanaProficiency')
+            input(id='arcana' type='number' name='arcana')
+            label(for='arcana') Arcana
+            br
+            br
+            input(id='athleticsProficiency' type='checkbox' name='athleticsProficiency')
+            input(id='athletics' type='number' name='athletics')
+            label(for='athletics') Athletics
+            br
+            br
+            input(id='deceptionProficiency' type='checkbox' name='deceptionProficiency')
+            input(id='deception' type='number' name='deception')
+            label(for='deception') Deception
+            br
+            br
+            input(id='historyProficiency' type='checkbox' name='historyProficiency')
+            input(id='history' type='number' name='history')
+            label(for='history') History
+            br
+            br
+            input(id='insightProficiency' type='checkbox' name='insightProficiency')
+            input(id='insight' type='number' name='insight')
+            label(for='insight') Insight
+            br
+            br
+            input(id='intimidationProficiency' type='checkbox' name='intimidationProficiency')
+            input(id='intimidation' type='number' name='intimidation')
+            label(for='intimidation') Intimidation
+            br
+            br
+            input(id='investigationProficiency' type='checkbox' name='investigationProficiency')
+            input(id='investigation' type='number' name='investigation')
+            label(for='investigation') Investigation
+            br
+            br
+            input(id='medicineProficiency' type='checkbox' name='medicineProficiency')
+            input(id='medicine' type='number' name='medicine')
+            label(for='medicine') Medicine
+            br
+            br
+            input(id='natureProficiency' type='checkbox' name='natureProficiency')
+            input(id='nature' type='number' name='nature')
+            label(for='nature') Nature
+            br
+            br
+            input(id='perceptionProficiency' type='checkbox' name='perceptionProficiency')
+            input(id='perception' type='number' name='perception')
+            label(for='perception') Perception
+            br
+            br
+            input(id='performanceProficiency' type='checkbox' name='performanceProficiency')
+            input(id='performance' type='number' name='performance')
+            label(for='performance') Performance
+            br
+            br
+            input(id='persuasionProficiency' type='checkbox' name='persuasionProficiency')
+            input(id='persuasion' type='number' name='persuasion')
+            label(for='persuasion') Persuasion
+            br
+            br
+            input(id='religionProficiency' type='checkbox' name='religionProficiency')
+            input(id='religion' type='number' name='religion')
+            label(for='religion') Religion
+            br
+            br
+            input(id='slightOfHandProficiency' type='checkbox' name='slightOfHandProficiency')
+            input(id='slightOfHand' type='number' name='slightOfHand')
+            label(for='slightOfHand') Slight Of Hand
+            br
+            br
+            input(id='stelthProficiency' type='checkbox' name='stelthProficiency')
+            input(id='stelth' type='number' name='stelth')
+            label(for='stelth') Stelth
+            br
+            br
+            input(id='survivalProficiency' type='checkbox' name='survivalProficiency')
+            input(id='survival' type='number' name='survival')
+            label(for='survival') Survival
+
+      div(class='leftlower')
+        input(id='passivePerception' type='number' name='passivePerception')
+        label(for='passivePerception') Passive Perception
+        br
+        br
+        textarea(id='proficiencies' form='character' name='proficiencies')
+        br
+        label(for='proficiencies') Proficiencies
+        br
+        br
+        textarea(id='languages' form='character' name='languages')
+        br
+        label(for='languages') Languages
+
+    div(class='col center')
+    div(class='col right')
