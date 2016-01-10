@@ -56,6 +56,7 @@ table {
 #character {
   display: flex;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -87,7 +88,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .col {
   display: inline;
-  margin: 3%;
+  margin: 1.5%;
 }
 
 .left {
@@ -122,4 +123,8 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 30%;
   text-align: center;
   border: solid 2px black;
+}
+
+.top {
+  display: block;
 }

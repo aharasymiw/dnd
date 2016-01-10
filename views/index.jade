@@ -3,6 +3,45 @@ extends layout
 block content
 
   form(id='character')
+  
+    div(class='top')
+
+      input(id='characterName' type='text' name='characterName')
+      br
+      label(for='characterName') Character Name
+
+      input(id='class' type='text' name='class')
+      br
+      label(for='class') Class
+
+      input(id='level' type='text' name='level')
+      br
+      label(for='level') Level
+
+      input(id='background' type='text' name='background')
+      br
+      label(for='background') Background
+
+      input(id='playerName' type='text' name='playerName')
+      br
+      label(for='playerName') Player Name
+
+      input(id='race' type='text' name='race')
+      br
+      label(for='race') Race
+
+      input(id='alignment' type='text' name='alignment')
+      br
+      label(for='alignment') Alignment
+
+      input(id='experience' type='number' name='experience')
+      br
+      label(for='experience') Experience Points
+
+      input(id='dciNumber' type='number' name='dciNumber')
+      br
+      label(for='dciNumber') DCI Number
+
     div(class='col left')
 
       div(class='leftupper group')
@@ -195,4 +234,31 @@ block content
         label(for='languages') Languages
 
     div(class='col center')
+      div(class='centerupper')
+        input(id='armorClass' type='number' name='armorClass')
+        label(for='armorClass') Armor Class
+
+        input(id='initiative' type='number' name='initiative')
+        label(for='initiative') Initiative
+
+        input(id='speed' type='number' name='speed')
+        label(for='speed') Speed
+
+      input(id='hpMax' type='number' name='hpMax')
+      label(for='hpMax') Hit Point Maximum
+
+      input(id='hpCurrent' type='number' name='hpCurrent')
+      label(for='hpCurrent') Current Hit Points
+
+      input(id='hpTemp' type='number' name='hpTemp')
+      label(for='hpTemp') Temporary Hit Points
+
+      input(id='hitDieTotal' type='text' name='hitDieTotal')
+      label(for='hitDieTotal') Total
+
+      input(id='hitDie' type='text' name='hitDie')
+      label(for='hitDie') Hit Dice
+
     div(class='col right')
+      textarea(id='personalityTraits' form='character' name='personalityTraits')
+      label(for='personalityTraits') Personality Traits
